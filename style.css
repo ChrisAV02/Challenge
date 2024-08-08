@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3F5FC;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+
+header h1{
+    padding: 10px 0;
+}
+
+header h1 img{
+    width: 80px;
+    height: 40px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+textarea{
+    background-color: transparent;
+    color: #0A3871;
+    outline: none;
+    resize: none;
+}
+
+main .contenedor1{
+    width: 70%;
+    height: 85vh;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: auto;
+}
+
+.contenedor1 .content__text1{
+    font-size: 1.5rem;
+    min-width: 70%;
+    min-height: 80%;
+}
+
+.contenedor1 .advertencia{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    opacity: 70%;
+    margin-bottom: 1rem;
+}
+
+.contenedor1 .botones{
+    width: 100%;
+}
+
+.contenedor1 .botones button{
+    background-color: #D8DFE8;
+    width: 12.5rem;
+    height: 2.5rem;
+    font-weight: bold;
+    color: #0A3871;
+    font-size: 1rem;
+    border: solid 1px #0A3871;
+    border-radius: 0.7rem;
+    margin-left: 1.25rem;
+    cursor: pointer;
+}
+
+.contenedor1 .botones button:hover,
+.contenedor2 button:hover{
+    background-color: #0A3871;
+    color: #fff;
+}
+
+main .contenedor2{
+    width: 30%;
+    height: 85vh;
+    margin-right: 1.5rem;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 10px 20px 3px #4646467a;
+}
+
+.contenedor2 .content__text2{
+    display: none;
+    min-width: 90%;
+    min-height: 90%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.contenedor2 .btnCopiar{
+    display: none;
+    background-color: #D8DFE8;
+    width: 12.5rem;
+    height: 2.5rem;
+    font-weight: bold;
+    color: #0A3871;
+    font-size: 0.9rem;
+    border: solid 1px #0A3871;
+    border-radius: 0.7rem;
+    margin: auto;
+    cursor: pointer;
+}
+
+/*Mensaje de que el texto no fue encontrado*/
+.contenedor2 .content__img{
+    display: block;
+}
+
+.contenedor2 img{
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor2 .content__mensaje{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.contenedor2 .content__mensaje h3{
+    font-size: 1.5rem;
+    color: #343A40;
+    margin-bottom: 1rem;
+}
+
+.contenedor2 .content__mensaje p{
+    font-size: 1rem;
+    color: #495057;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 70%;
+    margin-top: 1rem;
+}
+
+@media (min-width: 1500px){
+    body{
+        max-width: 1500px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        display: block;
+    }
+
+    main .contenedor1{
+        width: 90%;
+        padding: 1rem 0 0 0;
+        margin-bottom: 1rem;
+    }
+
+    main .contenedor2{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        border-radius: 1.5rem;
+    }
+
+    .contenedor2 .content__img{
+        display: none;
+    }
+
+    .contenedor2 .content__mensaje{
+        display: block;
+    }
+
+    .contenedor2 .content__text2{
+        display: none;
+    }
+
+    .contenedor2 .btnCopiar{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    main .contenedor1{
+        height: 70vh;
+        margin-bottom: 5rem;
+    }
+
+    .contenedor1 .botones button{
+        margin: 0.5rem 0;
+    }
+
+    .contenedor2 .content__img{
+        display: none;
+    }
+
+    .contenedor2 .content__mensaje{
+        display: block;
+    }
+    
+    .contenedor2 .content__text2{
+        display: none;
+    }
+
+    .contenedor2 .btnCopiar{
+        display: none;
+    }
+}

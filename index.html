@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge - Desafío 1 - Lógica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="resources/alura.svg" alt="Logo de alura">
+        </h1>
+    </header>
+    <main>
+        <section class="contenedor1">
+                <textarea class="content__text1" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="advertencia">
+                    <img src="resources/signo-de-exclamacion.png" alt="exclamación">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button onclick="btnEncriptar()">Encriptar</button>
+                    <button onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+        </section>
+        <section class="contenedor2">
+            <textarea class="content__text2" readonly></textarea>
+            <div class="content__img">
+                <img src="resources/img1.png" alt="">
+            </div>
+            <div class="content__mensaje">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="boton">
+                <button class="btnCopiar" onclick="copiarText()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h6>&copy; Cristian Joseph Acuña Vega - 2024</h6>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
